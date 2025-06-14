@@ -4,7 +4,7 @@
 /* Hero section for About Us page */
 .hero.about-hero {
   height: 400px;
-  background-image: url('images/about_usbg.jpg');
+  background-image: url('about_usbg.jpg');
   background-size: cover;
   background-position: center;
   position: relative;

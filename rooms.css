@@ -4,7 +4,7 @@
 /* Hero section for rooms page */
 .hero.rooms-hero {
   height: 400px;
-  background-image: url('images/roombg.jpg');
+  background-image: url('roombg.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
