@@ -1,0 +1,296 @@
+/* Import main styles */
+@import url('styles.css');
+
+/* Hero section for rooms page */
+.hero.rooms-hero {
+  height: 400px;
+  background-image: url('images/roombg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero.rooms-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+.hero.rooms-hero .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+}
+
+.hero.rooms-hero h1 {
+  font-family: 'Tai Heritage Pro';
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  letter-spacing: 0.1em;
+}
+
+.hero.rooms-hero .hero-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+/* Booking availability form */
+.booking-availability {
+  background: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-top: -40px;
+  position: relative;
+  z-index: 10;
+}
+
+.booking-form {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  color: #555;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btn.check-availability {
+  background-color: #ac7532;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.btn.check-availability:hover {
+  background-color: #8A5F2C;
+}
+
+/* Rooms list */
+.rooms-list {
+  max-width: 1200px;
+  margin: 60px auto 40px;
+  padding: 0 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.room-item {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+  align-items: center;
+}
+
+.room-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.room-image img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.room-details {
+  max-width: 600px;
+}
+
+.room-rating {
+  color: #d18c3a;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.room-rating .reviews {
+  color: #777;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.room-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.room-description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.room-price {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: left;
+  margin-left: 0;
+}
+
+.room-info {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  color: #555;
+  text-align: left;
+  margin-left: 0;
+}
+
+.room-info {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  color: #555;
+  text-align: left;
+  margin-left: 0;
+}
+
+.room-info li {
+  margin-bottom: 5px;
+}
+
+.room-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btn.book-now,
+.btn.more-details {
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn.book-now {
+  background-color: #b87d36;
+  color: white;
+  width: 150px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn.book-now:hover {
+  background-color: #8A5F2C;
+}
+
+.btn.more-details {
+  background-color: transparent;
+  color: #222;
+  border: 1px solid #222;
+  font-weight: 700;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 50px;
+  text-align: center;
+  width: 150px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.btn.more-details:hover {
+  background-color: #222;
+  color: white;
+}
+
+/* Load more button */
+.load-more-container {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.btn.load-more {
+  background-color: transparent;
+  border: 1px solid #222;
+  color: #222;
+  padding: 10px 30px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.btn.load-more:hover {
+  background-color: #222;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .room-item {
+    flex-direction: column;
+  }
+
+  .room-item.reverse {
+    flex-direction: column;
+  }
+
+  .room-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .rooms-list {
+    padding: 0 10px;
+  }
+
+  .booking-form {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .booking-availability {
+    margin-top: 0;
+  }
+}

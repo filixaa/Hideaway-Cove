@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hideaway Cove</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&family=Syne&display=swap" rel="stylesheet" />
+  </head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images\logo.png" alt="Hideaway Cove Logo" class="logo-image" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="rooms.html">ROOMS</a></li>
+        <li><a href="offerings.html">OFFERS</a></li>
+        <li><a href="booking.html">BOOKINGS</a></li>
+        <li><a href="contacts.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>HIDEAWAY COVE</h1>
+      <p class="subtitle">MORE THAN A HOTEL ... AN ESCAPE</p>
+      <div class="buttons">
+        <a href="#gallery" class="btn get-started">GET STARTED</a>
+        <input type="checkbox" id="modal-toggle" class="modal-toggle" hidden />
+        <label for="modal-toggle" class="btn log-in" style="cursor:pointer;">LOG IN</label>
+
+        <!-- Modal Structure -->
+        <div class="modal">
+          <label for="modal-toggle" class="modal-overlay"></label>
+          <div class="modal-content modal-split">
+            <div class="modal-image-container">
+              <img src="images/counter.png" alt="Travel Image" class="modal-image" />
+            </div>
+            <div class="modal-form-container">
+              <h2>Login</h2>
+              <form>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required />
+                <a href="#" class="forgot-password">Forgot password?</a>
+                <button type="submit" class="btn sign-in-btn">SIGN IN</button>
+                <div class="divider"><span>or</span></div>
+                <p class="create-account">Are you new? <a href="#">Create an Account</a></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+      <a href="rooms.html" class="gallery-item">
+        <img src="images/special rooms.jpg" alt="Special Rooms" />
+        <div class="overlay-text">SPECIAL ROOMS</div>
+      </div>
+      </a>
+      <div class="gallery-item">
+        <img src="images/swimming pool.jpg" alt="Swimming Pool" />
+        <div class="overlay-text">SWIMMING POOL</div>
+      </div>
+      <a href="offerings.html" class="gallery-item">
+        <img src="images/gastronomy.jpg" alt="Gastronomy" />
+        <div class="overlay-text">GASTRONOMY</div>
+      </div>
+      </a>
+      <a href="rooms.html" class="gallery-item suite-rooms">
+        <img src="images/suite_s and rooms.jpg" alt="Suites & Rooms" />
+        <div class="overlay-text">
+          <div class="title">SUITE'S &amp; ROOMS</div>
+          <div class="subtitle">Special rooms</div>
+          <div class="arrow-container">
+            <button class="arrow-btn" aria-label="View Suites and Rooms">→</button>
+          </div>
+        </div>
+      </a>
+    </section>
+
+  <section class="welcome-section">
+    <p class="welcome-subtitle">WELCOME TO HIDEAWAY COVE HOTELS</p>
+    <h1 class="welcome-quote">"GET LOST — IN THE BEST WAY POSSIBLE"</h1>
+    <p class="welcome-description">
+      Welcome to Hideaway Cove, where time slows down and tranquility takes over. Tucked away from the noise but never far<br> from comfort, our boutique hotel is your perfect escape — whether you're chasing sunsets, serenity, or a little bit of both. At<br> Hideaway Cove, you're not just checking in — you're checking out of ordinary.
+    </p>
+  </section>
+
+  <!-- Page 3 Section Start -->
+  <section class="page3-container">
+    <!-- Top grid section -->
+    <div class="top-grid">
+      <div class="grid-item booking-offer">
+        <img src="images/Book a weekend at a luxurious oasis_.jpg" alt="Early Booking Offer" />
+        <div class="overlay">
+          <h2>EARLY BOOKING</h2>
+          <h3>50% OFF</h3>
+          <p>Book early, save big. Secure your slice of<br> paradise now because the best escapes<br> don't wait.</p>
+          <p class="price">From only <br />$90.00</p>
+          <a href="rooms.html"><button class="btn book-now">BOOK NOW</button></a>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="images/ee234c38-c1ed-4f78-8de0-fc0914c2cc90.jpg" alt="Swimming Pool" />
+      </div>
+      <div class="grid-item">
+        <img src="images/Gym.jpg" alt="Gym" />
+      </div>
+      <div class="grid-item">
+        <img src="images/bedroom.jpg" alt="Pool at Night" />
+      </div>
+      <div class="grid-item">
+        <img src="images/Seaside Night Jazz in Luxurious Hotel 4K_ Perfect Space of High-Class Resort with Elegant Jazz Music.jpg" alt="Suites and Rooms" />
+      </div>
+    </div>
+
+    <!-- Bottom section -->
+    <div class="bottom-section">
+      <div class="bottom-image">
+        <img src="images/0d468500-80bf-4ff6-8b72-77f3aa45fe8b.jpg" alt="Beach Club" />
+      </div>
+      <div class="bottom-text">
+        <h2 style="text-align:center;">BEACH CLUB</h2>
+        <hr />
+        <p style="text-align:center;">
+          The Beach Club at Hideaway Cove is where your flip-flops<br>
+          meet fine cocktails, and lazy afternoons stretch into<br>
+          golden sunsets. Whether you're diving into crystal-clear<br>
+          waters or lounging with a tropical drink in hand, this is<br>
+           beachfront bliss—served daily with a splash of style.
+        </p>
+        <a href="offerings.html"><button class="btn view-more" style="margin: 0 auto; display: block;">View More</button><a href="rooms.html"></a>
+      </div>
+    </div>
+  </section>
+  <!-- Page 3 Section End -->
+        </div>
+
+  <!-- Footer Section Start -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column footer-left">
+        <h3>FOLLOW US</h3>
+        <p>Your Secluded Escape, Redefined.</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/" aria-label="Instagram" class="social-icon instagram"></a>
+          <a href="https://www.facebook.com/" aria-label="Facebook" class="social-icon facebook"></a>
+          <a href="https://x.com/" aria-label="Twitter" class="social-icon twitter"></a>
+          <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" aria-label="Email" class="social-icon email"></a>
+        </div>
+      </div>
+      <div class="footer-column footer-center">
+        <p>Location: Hidden Shores, Coastal Paradise</p>
+        <p>Reservations: +123 456 7890</p>
+        <p>Email: <a href="mailto:stay@hideawaycovehotel.com">stay@hideawaycovehotel.com</a></p>
+        <p>Website: <a href="http://www.hideawaycovehotel.com" target="_blank" rel="noopener noreferrer">www.hideawaycovehotel.com</a></p>
+      </div>
+      <div class="footer-column footer-right">
+        <p>© 2025 Hideaway Cove Hotel. All Rights Reserved.</p>
+        <p>
+          <a href="#">Privacy Policy</a> | 
+          <a href="#">Terms &amp; Conditions</a> | 
+          <a href="#">Careers</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section End -->
+
+</body>
+</html>
+

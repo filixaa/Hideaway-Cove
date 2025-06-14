@@ -1,0 +1,1276 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Tai Heritage Pro', sans-serif;
+  color: #222;
+  background-color: #d9d9d9;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Tai Heritage Pro', 'Times New Roman', Times, serif;
+  color: white;
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #d18c3a;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: transparent;
+  padding: 20px 40px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a.active {
+  color: #d18c3a;
+  border-bottom: 1px light #d18c3a;
+  padding-bottom: 4px;
+}
+
+.hero {
+  height: 900px;
+  background-image: url('./images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-family: 'Tai Heritage Pro', 'Times New Roman', Times, serif;
+  color: white;
+  font-size: 48px;
+  font-weight: 200;
+  margin-bottom: 10px;
+  letter-spacing: 0.1em;
+}
+
+.subtitle {
+  font-family: 'Tai Heritage Pro', 'Times New Roman', Times, serif;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  margin-bottom: 30px;
+  font-weight: 200;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn.log-in {
+  background-color: #D9D9D9;
+  color: #8A5F2C;
+  border: 1px solid #8A5F2C;
+  font-weight: 200;
+  font-size: 14px;
+  padding: 12px 30px;
+  border-radius: 5px;
+  border-color: #fff;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn.log-in:hover {
+  background-color: #f0f0f0;
+}
+
+.modal-form-container h2 {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 32px;
+  color: #8A5F2C;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.forgot-password {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #8A5F2C;
+  margin-bottom: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  font-weight: 200;
+  font-size: 14px;
+  padding: 12px 30px;
+  border-radius: 5px;
+  border-color: #fff;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.get-started {
+  background-color: #8A5F2C;
+  color: white;
+  border: 1px solid white;
+  font-family: 'Syne';
+}
+
+.get-started:hover {
+  background-color: #d18c3a;
+  color: white;
+}
+
+.log-in {
+  background-color: #D9D9D9;
+  color: #8A5F2C;
+  border: 1px solid #8A5F2C;
+}
+
+.log-in:hover {
+  background-color: #f0f0f0;
+}
+
+/* Gallery Section */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 50px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 10px 0;
+  margin-top:-100px;
+  
+}
+
+.gallery-item {
+  position: relative;
+  width: 250px;
+  height: 200px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0,0,0,0.15);
+  z-index: 3;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  color: white;
+  font-size: 14px;
+  font-family: 'Syne Mono';
+  letter-spacing: 0.1em;
+  font-weight: 100;
+  text-shadow: 0 0 5px rgba(0,0,0,0.7);
+  user-select: none;
+}
+
+.suite-rooms .overlay-text {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.877);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Rozha One';
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.suite-rooms .overlay-text .title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.suite-rooms .overlay-text .subtitle {
+  font-size: 12px;
+  font-family: 'Syne Mono';
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.arrow-btn {
+  background: none;
+  border: none;
+  color: #FFFF00;
+  font-size: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: -45px;
+  line-height: 1;
+  transition: color 0.3s ease;
+  display: block;
+}
+
+.arrow-btn:hover {
+  color: #a56e2a;
+}
+
+.arrow-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.arrow-btn:hover {
+  color: #a56e2a;
+}
+
+.suite-rooms .overlay-text .arrow {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.welcome-subtitle {
+  color: #b59e4c;
+  font-weight: 600;
+  font-family: 'Rozha One';
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  margin-bottom: 15px;
+}
+
+.welcome-quote {
+  font-size: 36px;
+  font-weight: 100;
+  font-family: 'Tai Heritage Pro';
+  margin-bottom: 20px;
+  max-width: 725px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.welcome-description {
+  font-size: 16px;
+  font-family: 'Syne';
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.1;
+  color: #333;
+}
+
+/* Page3 styles merged from page3.css */
+
+/* Container for page3 */
+.page3-container {
+  max-width: 1200px;
+  margin: 80px auto 60px;
+  padding: 0 20px;
+}
+
+/* Top grid layout */
+.top-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 60px;
+  height: 500px;
+}
+
+.booking-offer {
+  grid-row: 1 / span 2;
+  grid-column: 1 / 2;
+}
+
+.top-grid > .grid-item:nth-child(2) {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.top-grid > .grid-item:nth-child(3) {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.top-grid > .grid-item:nth-child(4) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.top-grid > .grid-item:nth-child(5) {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0,0,0,0.15);
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Overlay on first grid item */
+.booking-offer .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.booking-offer h2 {
+  font-family: 'Tai Heritage Pro';
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  letter-spacing: 0.1em;
+}
+
+.booking-offer h3 {
+  font-family: 'Tai Heritage Pro';
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
+
+.booking-offer p:not(.price) {
+  font-family: 'Syne';
+  font-size: 15px;
+  line-height: 1.3;
+  max-width: 270px;
+  margin-bottom: 20px;
+}
+
+.booking-offer .price {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Syne', monospace;
+  margin-bottom: 20px;
+}
+
+.btn.book-now {
+  background-color: #BAA533;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  align-self: center;
+  padding: 12px 40px;
+  font-size: 16px;
+}
+
+.btn.book-now:hover {
+  background-color: gray;
+}
+
+.btn.book-now:hover {
+  background-color: gray;
+}
+
+/* Bottom section */
+.bottom-section {
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 150px;
+  background-color: transparent;
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: none;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 0;
+}
+
+.bottom-image {
+  flex: 1;
+  overflow: hidden;
+  max-width: 400px;
+  border-radius: 0;
+}
+.bottom-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+}
+
+.bottom-text {
+  flex: 1;
+  padding: 0 20px;
+  text-align: center;
+  font-family: 'Syne', sans-serif;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 10px;
+  letter-spacing: 0.1em;
+  margin-left: 0;
+}
+
+.bottom-text hr {
+  width: 60px;
+  border: 1px solid #222;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  margin-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bottom-text p {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Syne', sans-serif;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  margin-left: 0;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn.view-more {
+  background-color: #777;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 3px;
+  align-self: flex-start;
+}
+
+.btn.view-more:hover {
+  background-color: #555;
+}
+
+.bottom-image {
+  flex: 1;
+  overflow: hidden;
+}
+
+.bottom-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.bottom-text {
+  flex: 1;
+  padding: 40px 30px;
+  text-align: center;
+  font-family: 'Syne', sans-serif;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottom-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 10px;
+  letter-spacing: 0.1em;
+  margin-left: 0;
+}
+
+.bottom-text hr {
+  width: 60px;
+  border: 1px solid #222;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  margin-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bottom-text p {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Syne', bold;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  margin-left: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn.view-more {
+  background-color: #777;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 0;
+  align-self: center;
+}
+
+.btn.view-more:hover {
+  background-color: #555;
+}
+
+/* Modal styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Tai Heritage Pro', sans-serif;
+  z-index: 1000;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.modal-content {
+  position: relative;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 40px 50px;
+  width: 900px;
+  max-width: 90%;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.2);
+  z-index: 1002;
+  color: #8A5F2C;
+  font-family: 'Tai Heritage Pro', serif;
+  text-align: left;
+  display: flex;
+  gap: 40px;
+}
+
+.modal-form-container h2 {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 32px;
+  color: #8A5F2C;
+  letter-spacing: 0.05em;
+}
+
+.modal-form-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #8A5F2C;
+  font-family: 'Tai Heritage Pro', sans-serif;
+}
+
+.modal-form-container input[type="email"],
+.modal-form-container input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #8A5F2C;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Tai Heritage Pro', sans-serif;
+  color: #222;
+  outline: none;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.modal-form-container input[type="email"]:focus,
+.modal-form-container input[type="password"]:focus {
+  box-shadow: 0 0 5px 2px #d18c3a;
+  border-color: #d18c3a;
+}
+
+.forgot-password {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #8A5F2C;
+  margin-bottom: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Tai Heritage Pro', sans-serif;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.btn.sign-in-btn {
+  width: 100%;
+  background-color: #d18c3a;
+  color: white;
+  border: none;
+  padding: 14px 0;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Tai Heritage Pro', sans-serif;;
+  border-radius: 8px;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  transition: background-color 0.3s ease;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btn.sign-in-btn:hover {
+  background-color: #8A5F2C;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 25px 0;
+  color: #8A5F2C;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #8A5F2C;
+  margin: 0 10px;
+}
+
+.btn.google-signin-btn {
+  width: 100%;
+  background-color: transparent;
+  color: #8A5F2C;
+  border: 1px solid #8A5F2C;
+  padding: 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  font-family: 'Tai Heritage Pro', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn.google-signin-btn:hover {
+  background-color: #8A5F2C;
+  color: white;
+  border-color: #d18c3a;
+}
+
+.create-account {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #8A5F2C;
+  font-family: 'Tai Heritage Pro', sans-serif;
+  text-align: center;
+}
+
+.create-account a {
+  color: #d18c3a;
+  font-weight: 700;
+  font-family: 'Tai Heritage Pro', sans-serif;;
+  text-decoration: none;
+}
+
+.create-account a:hover {
+  text-decoration: underline;
+}
+
+.modal-image-container {
+  flex: 1;
+  overflow: hidden;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.2);
+}
+
+.modal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.modal-form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-form-container h2 {
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 32px;
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+
+.modal-form-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+}
+
+.modal-form-container input[type="email"],
+.modal-form-container input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Tai Heritage Pro', sans-serif;
+  color: #222;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.modal-form-container input[type="email"]:focus,
+.modal-form-container input[type="password"]:focus {
+  box-shadow: 0 0 5px 2px #8A5F2C;
+}
+
+.forgot-password {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #e0e0e0;
+  margin-bottom: 25px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.btn.sign-in-btn {
+  width: 100%;
+  background-color: #8A5F2C;
+  color: white;
+  border: none;
+  padding: 14px 0;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  transition: background-color 0.3s ease;
+  font-family: 'Tai Heritage Pro', sans-serif;
+}
+
+.btn.sign-in-btn:hover {
+  background-color: #805929;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 25px 0;
+  color: #ccc;
+  font-size: 14px;
+  font-family: 'Tai Heritage Pro', sans-serif;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+  margin: 0 10px;
+}
+
+.btn.google-signin-btn {
+  width: 100%;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #ccc;
+  padding: 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  font-family: 'Tai Heritage Pro', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn.google-signin-btn:hover {
+  background-color: rgba(255,255,255,0.2);
+  border-color: #ac7737;
+ 
+}
+
+.create-account {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #e0e0e0;
+  font-family: 'Tai Heritage Pro', sans-serif;
+  text-align: center;
+}
+
+.create-account a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.create-account a:hover {
+  text-decoration: underline;
+}
+
+/* Show modal when checkbox is checked */
+.modal-toggle:checked + label.log-in + .modal {
+  display: flex;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .modal-content {
+    flex-direction: column;
+    width: 90%;
+    padding: 20px;
+  }
+
+  .modal-image-container {
+    height: 200px;
+    margin-bottom: 20px;
+  }
+}
+
+  .bottom-section {
+  display: flex;
+  max-width: 850px;
+  margin: 0 auto;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.bottom-image {
+  flex: 1;
+  border-radius: 0;
+  
+}
+
+.bottom-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.bottom-text {
+  flex: 1;
+  padding: 40px 30px;
+  text-align: left;
+  border-radius: 0;
+  font-family: 'Syne', sans-serif;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottom-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 10px;
+  letter-spacing: 0.1em;
+}
+
+.bottom-text hr {
+  width: 40px;
+  border: 1px solid #222;
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+
+.bottom-text p {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+.btn.view-more {
+  background-color: #777;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.btn.view-more:hover {
+  background-color: #555;
+}
+
+
+/* Footer styles */
+.site-footer {
+  background-color: #fff;
+  padding: 30px 20px;
+  font-family: 'Syne', sans-serif;
+  color: #222;
+  font-size: 14px;
+  border-top: 1px solid #ccc;
+  margin-top: 60px;
+}
+
+.footer-center,
+.footer-right {
+  text-align: left;
+}
+
+.footer-right p {
+  margin-bottom: 8px;
+}
+
+.footer-right p a {
+  display: inline;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1 1 250px;
+  min-width: 200px;
+}
+
+.footer-left h3 {
+  font-family: 'Rozha One';
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 10px;
+  letter-spacing: 0.1em;
+}
+
+.footer-left p {
+  margin-bottom: 10px;
+  margin-left: 85px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-left: 85px;
+  margin-top: 5px;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.social-icon:hover {
+  filter: none;
+}
+
+.footer-left p {
+  margin-bottom: 10px;
+  margin-left: 85px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 8px;
+  margin-left: 133px;
+  margin-top: 5px;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.social-icon:hover {
+  filter: none;
+}
+
+.social-icon.instagram {
+  background-image: url('images/instagram.png');
+}
+
+.social-icon.facebook {
+  background-image: url('images/facebook.png');
+}
+
+.social-icon.twitter {
+  background-image: url('images/twitter.png');
+  margin-top: 1px;
+}
+
+.social-icon.email {
+  background-image: url('images/email.png');
+}
+
+.footer-center p,
+.footer-right p {
+  margin-bottom: 8px;
+  margin-left: -10px;
+}
+
+.footer-center a,
+.footer-right a {
+  color: #222;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 13px;
+  font-family: 'Syne';
+}
+
+.footer-center a:hover,
+.footer-right a:hover {
+  color: #b59e4c;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    min-width: auto;
+  }
+   .bottom-section {
+    flex-direction: column;
+  }
+
+  .bottom-text {
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .btn.view-more {
+    align-self: center;
+  }
+}
+
+/* Offerings Section */
+.offerings-section {
+  max-width: 1200px;
+  margin: 80px auto 60px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #8A5F2C;
+  margin-bottom: 40px;
+  letter-spacing: 0.1em;
+}
+
+.offerings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.offering-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.offering-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.offering-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.offering-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: #8A5F2C;
+  margin: 15px 0 10px 0;
+}
+
+.offering-card p {
+  font-family: 'Syne', sans-serif;
+  font-size: 14px;
+  color: #333;
+  padding: 0 15px;
+  line-height: 1.4;
+  max-width: 260px;
+  margin: 0 auto;
+}

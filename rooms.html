@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hideaway Cove - Rooms</title>
+    <link rel="stylesheet" href="rooms.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&family=Syne&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="images/logo.png" alt="Hideaway Cove Logo" class="logo-image" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="rooms.html" class="active">ROOMS</a></li>
+          <li><a href="offerings.html">OFFERS</a></li>
+          <li><a href="booking.html">BOOKINGS</a></li>
+          <li><a href="contacts.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero rooms-hero">
+      <div class="hero-content">
+        <h1>SUITE'S & ROOMS</h1>
+        <p class="hero-subtitle">Discover refined comfort in every corner of our beautifully curated suites and rooms. Whether you're seeking a tranquil retreat or a luxurious base for adventure, each space is crafted to offer timeless elegance, modern amenities, and uninterrupted relaxation. At Hideaway Cove, your room is more than a place to stay — it's part of the escape.</p>
+      </div>
+    </section>
+
+    <section class="booking-availability">
+      <form class="booking-form" action="#" method="GET" aria-label="Booking Availability Form">
+        <div class="form-group">
+          <label for="checkin">Check In</label>
+          <input type="date" id="checkin" name="checkin" required />
+        </div>
+        <div class="form-group">
+          <label for="checkout">Check Out</label>
+          <input type="date" id="checkout" name="checkout" required />
+        </div>
+        <div class="form-group">
+          <label for="guests">Guests</label>
+          <select id="guests" name="guests" required>
+            <option value="1">01</option>
+            <option value="2" selected>02</option>
+            <option value="3">03</option>
+            <option value="4">04</option>
+            <option value="4">05</option>
+            <option value="4">06</option>
+            <option value="4">07</option>
+            <option value="4">08</option>
+            <option value="4">09</option>
+            <option value="4">10</option>
+          </select>
+        </div>
+        <button type="submit" class="btn check-availability">Check Availability</button>
+      </form>
+    </section>
+
+    <section class="rooms-list">
+      <article class="room-item">
+        <div class="room-image">
+          <img src="images/room1.jpg" alt="Luxury Super Delux" />
+        </div>
+        <div class="room-details">
+          <div class="room-rating">
+            <span class="stars">★★★★★</span>
+            <span class="reviews">(100 Reviews)</span>
+          </div>
+          <h2 class="room-title">The Hideaway Collection</h2>
+          <p class="room-description">Step into a world of curated luxury with The Hideaway Collection — a selection of suites and rooms designed for ultimate comfort, elegance, and escape. Whether you're seeking a peaceful retreat or a romantic getaway, your perfect sanctuary awaits.</p>
+          <p class="room-price">Starts From <strong>$299</strong></p>
+          <ul class="room-info">
+            <li><strong>STATUS:</strong> Available</li>
+            <li><strong>PAYMENT:</strong> 30% Advanced</li>
+            <li><strong>GUEST:</strong> 2</li>
+            <li><strong>BEDS:</strong> 2</li>
+          </ul>
+          <div class="room-buttons">
+            <a href="booking.html"><button class="btn book-now">Book Now</button></a>
+            <button class="btn more-details">More Details</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="room-item reverse">
+        <div class="room-image">
+          <img src="images/rooom3.jpg" alt="Simple Family Room" />
+        </div>
+        <div class="room-details">
+          <div class="room-rating">
+            <span class="stars">★★★★★</span>
+            <span class="reviews">(105 Reviews)</span>
+          </div>
+          <h2 class="room-title">Harbor Haven: Family Escapes</h2>
+          <p class="room-description">Create lasting memories in our thoughtfully designed family suites, where comfort meets togetherness. With spacious layouts, cozy corners, and serene surroundings, Harbor Haven is your family’s perfect coastal retreat — a space to relax, reconnect, and explore.</p>
+          <p class="room-price">Starts From <strong>$399</strong></p>
+          <ul class="room-info">
+            <li><strong>STATUS:</strong> Unavailable</li>
+            <li><strong>PAYMENT:</strong> 20% Advanced</li>
+            <li><strong>GUEST:</strong> 3</li>
+            <li><strong>BEDS:</strong> 2</li>
+          </ul>
+          <div class="room-buttons">
+            <a href="booking.html"><button class="btn book-now">Book Now</button></a>
+            <button class="btn more-details">More Details</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="room-item">
+        <div class="room-image">
+          <img src="images/bedroom.jpg " alt="Luxury Family Delux" />
+        </div>
+        <div class="room-details">
+          <div class="room-rating">
+            <span class="stars">★★★★★</span>
+            <span class="reviews">(110 Reviews)</span>
+          </div>
+          <h2 class="room-title">Tranquil Stays</h2>
+          <p class="room-description">Designed with space, serenity, and connection in mind, Tranquil Stays offers the perfect blend of comfort and calm for families. Enjoy peaceful nights, open living spaces, and thoughtful touches that turn every moment into a cherished memory.</p>
+          <p class="room-price">Starts From <strong>$499</strong></p>
+          <ul class="room-info">
+            <li><strong>STATUS:</strong> Available</li>
+            <li><strong>PAYMENT:</strong> 20% Advanced</li>
+            <li><strong>GUEST:</strong> 5</li>
+            <li><strong>BEDS:</strong> 2</li>
+          </ul>
+          <div class="room-buttons">
+            <a href="booking.html"><button class="btn book-now">Book Now</button></a>
+            <button class="btn more-details">More Details</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="room-item reverse">
+        <div class="room-image">
+          <img src="images/single.jpg" alt="Single Super Delux" />
+        </div>
+        <div class="room-details">
+          <div class="room-rating">
+            <span class="stars">★★★★★</span>
+            <span class="reviews">(105 Reviews)</span>
+          </div>
+          <h2 class="room-title">Escape Suites</h2>
+          <p class="room-description">Every stay begins with an escape — even a solo one. Discover a space designed just for you, where solitude meets style and every detail invites rest, reflection, and renewal.</p>
+          <p class="room-price">Starts From <strong>$599</strong></p>
+          <ul class="room-info">
+            <li><strong>STATUS:</strong> Unavailable</li>
+            <li><strong>PAYMENT:</strong> 15% Advanced</li>
+            <li><strong>GUEST:</strong> 1</li>
+            <li><strong>BEDS:</strong> 2</li>
+          </ul>
+          <div class="room-buttons">
+            <a href="booking.html"><button class="btn book-now">Book Now</button></a>
+            <button class="btn more-details">More Details</button>
+          </div>
+        </div>
+      </article>
+      <article class="room-item">
+        <div class="room-image">
+          <img src="images/room4.jpg" alt="Luxury Family Delux" />
+        </div>
+        <div class="room-details">
+          <div class="room-rating">
+            <span class="stars">★★★★★</span>
+            <span class="reviews">(110 Reviews)</span>
+          </div>
+          <h2 class="room-title">The Serenity List</h2>
+          <p class="room-description">A handpicked array of suites for peace-seekers. Each space is thoughtfully designed to offer calm, comfort, and quiet luxury. Let your stay be a gentle pause — a moment to reconnect with yourself and the serene beauty around you.</p>
+          <p class="room-price">Starts From <strong>$499</strong></p>
+          <ul class="room-info">
+            <li><strong>STATUS</strong> Available</li>
+            <li><strong>PAYMENT</strong> 20% Advanced</li>
+            <li><strong>GUEST</strong> 5</li>
+            <li><strong>BEDS</strong> 2</li>
+          </ul>
+          <div class="room-buttons">
+            <a href="booking.html"><button class="btn book-now">Book Now</button></a>
+            <button class="btn more-details">More Details</button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-column footer-left">
+          <h3>FOLLOW US</h3>
+          <p>Your Secluded Escape, Redefined.</p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/" aria-label="Instagram" class="social-icon instagram"></a>
+            <a href="https://www.facebook.com/" aria-label="Facebook" class="social-icon facebook"></a>
+            <a href="https://x.com/" aria-label="Twitter" class="social-icon twitter"></a>
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" aria-label="Email" class="social-icon email"></a>
+          </div>
+        </div>
+        <div class="footer-column footer-center">
+          <p>Location: Hidden Shores, Coastal Paradise</p>
+          <p>Reservations: +123 456 7890</p>
+          <p>Email: <a href="mailto:stay@hideawaycovehotel.com">stay@hideawaycovehotel.com</a></p>
+          <p>Website: <a href="http://www.hideawaycovehotel.com" target="_blank" rel="noopener noreferrer">www.hideawaycovehotel.com</a></p>
+        </div>
+        <div class="footer-column footer-right">
+          <p>© 2025 Hideaway Cove Hotel. All Rights Reserved.</p>
+          <p>
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms &amp; Conditions</a> | 
+            <a href="#">Careers</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

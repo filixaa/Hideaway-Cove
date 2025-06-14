@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Booking - Hideaway Cove</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="booking.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="Hideaway Cove Logo" class="logo-image" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="rooms.html">ROOMS</a></li>
+        <li><a href="offerings.html">OFFERS</a></li>
+        <li><a href="booking.html" class="active">BOOKINGS</a></li>
+        <li><a href="contacts.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="booking-container">
+    <h1 class="booking-title">Complete Your Booking</h1>
+    <div class="booking-grid">
+      <div class="form-section">
+        <form>
+          <h3>Guest Details</h3>
+          <div class="form-row">
+            <input type="text" placeholder="First name" />
+            <input type="text" placeholder="Last Name" />
+          </div>
+          <div class="form-row">
+            <select>
+              <option>1 King bed</option>
+              <option>2 King beds</option>
+              <option>2 Queen beds</option>
+              <option>1 Queen bed</option>
+              <option>1 Single bed</option>
+              <option>2 Single beds</option>
+              <option>3 Single beds</option>
+            </select>
+            <select>
+              <option>Non smoking</option>
+              <option>Smoking</option>
+            </select>
+          </div>
+
+          <h3>Billing Details</h3>
+          <div class="form-row">
+            <input type="text" placeholder="First name" />
+            <input type="text" placeholder="Last Name" />
+          </div>
+          <div class="form-row">
+            <input type="email" placeholder="Email Address" />
+            <input type="tel" placeholder="Phone Number" />
+          </div>
+          <div class="form-row">
+            <input type="text" placeholder="Billing Address" />
+            <input type="text" placeholder="City" />
+          </div>
+          <div class="form-row">
+            <select>
+              <option>Country</option>
+              <option>Australia</option>
+              <option>USA</option>
+              <option>UK</option>
+              <option>California</option>
+              <option>Philippines</option>
+              <option>Canada</option>
+              <option>Japan</option>
+            </select>
+            <input type="text" placeholder="ZIP/Postal Code" />
+          </div>
+
+          <h3>Need to Know Information</h3>
+          <ul class="info-list">
+            <li>Cancellation Policy</li>
+            <li>Check In Instructions</li>
+            <li>Hotel Policy</li>
+          </ul>
+
+          <h3>Special Requests*</h3>
+          <textarea placeholder="Special requests cannot be guaranteed"></textarea>
+
+          <h3>Payment and Confirmation</h3>
+          <div class="form-row payment-section">
+            <select>
+              <option>Select card</option>
+              <option>Visa</option>
+              <option>MasterCard</option>
+              <option>American Express</option>
+            </select>
+            <input type="text" placeholder="Card Number" />
+          </div>
+          <div class="form-row payment-section">
+            <input type="text" placeholder="CSV" />
+            <select>
+              <option>Month</option>
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+            </select>
+            <select>
+              <option>Year</option>
+              <option>2023</option>
+              <option>2024</option>
+              <option>2025</option>
+              <option>2026</option>
+            </select>
+          </div>
+          <div class="checkbox-row">
+            <input type="checkbox" id="agree" />
+            <label for="agree">I agree to the <a href="#">Terms and Conditions</a> and understand the cancellation policy.</label>
+          </div>
+
+          <div class="total-price">Total: $618.76 USD</div>
+          <div class="total-note">
+            Total includes tax recovery charges and service fees.<br />
+            Full payment will be charged to your credit card when you book this hotel.
+          </div>
+
+          <button type="submit" class="book-btn">Book this room</button>
+          <div class="confirmation-text">You'll receive a confirmation email</div>
+        </form>
+      </div>
+
+      <div class="summary-box">
+        <img src="images/bedroom.jpg" alt="Tranquil Stays" />
+        <div class="summary-title">Tranquil Stays</div>
+        <div class="summary-subtitle">Hideaway Cove Luxury.<br> Designed with space, serenity, and connection in mind, Tranquil Stays offers the perfect blend of comfort and calm for families. Enjoy peaceful nights, open living spaces, and thoughtful touches that turn every moment into a cherished memory.
+        </div>
+        <div class="summary-info">
+          <p><strong>Check in:</strong> Wed, Feb 18 2015</p>
+          <p><strong>Check out:</strong> Fri, Feb 20 2015</p>
+          <p><strong>Room type:</strong> Family Suite, 2 Beds, Non-Smoking</p>
+          <p><strong>Rooms:</strong> 1</p>
+          <p><strong>Guests:</strong> 5</p>
+          <p><strong>Refundable:</strong> Yes</p>
+          <p class="price"><strong>Starts From:</strong> $499.00 USD</p>
+          <p><strong>Hotel occupancy and sales tax (14%):</strong>$69.86</p>
+          <p><strong>Tax recovery charges and service fees (~10%):</strong>$49.90</p>
+          <p class="price"><strong>Estimated Total (2 nights):</strong> $618.76 USD</p>
+        </div>
+      </div>
+    </div>
+</main>
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column footer-left">
+      <h3>FOLLOW US</h3>
+      <p>Your Secluded Escape, Redefined.</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/" aria-label="Instagram" class="social-icon instagram"></a>
+        <a href="https://www.facebook.com/" aria-label="Facebook" class="social-icon facebook"></a>
+        <a href="https://x.com/" aria-label="Twitter" class="social-icon twitter"></a>
+        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" aria-label="Email" class="social-icon email"></a>
+      </div>
+    </div>
+    <div class="footer-column footer-center">
+      <p>Location: Hidden Shores, Coastal Paradise</p>
+      <p>Reservations: +123 456 7890</p>
+      <p>Email: <a href="mailto:stay@hideawaycovehotel.com">stay@hideawaycovehotel.com</a></p>
+      <p>Website: <a href="http://www.hideawaycovehotel.com" target="_blank" rel="noopener noreferrer">www.hideawaycovehotel.com</a></p>
+    </div>
+    <div class="footer-column footer-right">
+      <p>© 2025 Hideaway Cove Hotel. All Rights Reserved.</p>
+      <p>
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms &amp; Conditions</a> | 
+        <a href="#">Careers</a>
+      </p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
